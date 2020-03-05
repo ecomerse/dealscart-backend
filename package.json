@@ -6,12 +6,12 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "restart": "pm2 startOrRestart ecosystem.config.js",
-    "deploy": "pm2 deploy ecosystem.config.js production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "client-install": "cd AngularDealscart && npm install",
     "client": "cd AngularDealscart && ng serve",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "restart": "pm2 startOrRestart ecosystem.config.js",
+    "deploy": "pm2 deploy ecosystem.config.js production"
   },
   "author": "ADITYA",
   "license": "ISC",
